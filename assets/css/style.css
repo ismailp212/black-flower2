@@ -2364,6 +2364,13 @@ textarea.input-field {
     margin-right: 5px;
   }
 
+
+  .hover\:shine::after {
+    display: none;
+  }
+
+
+
 }
 
 @media (max-width: 380px) {
@@ -2420,13 +2427,13 @@ textarea.input-field {
 .about-content {
   transform: translateX(-50px);
   opacity: 0;
-  transition: opacity 1500ms, transform 1500ms;
+  transition: opacity 1500ms, transform 1000ms;
 }
 
 .about-banner {
   transform: translateY(50px); 
   opacity: 0;
-  transition: opacity 1500ms, transform 1500ms;
+  transition: opacity 1000ms, transform 1000ms;
 }
 
 .about-content.animated,
@@ -2449,11 +2456,16 @@ textarea.input-field {
 
 
 
+.image-section {
+  transform: translateX(-50px);
+  opacity: 0;
+  transition: opacity 1000ms, transform 600ms;
+}
 
 .image-section {
-  transform: translateY(80px);
+  transform: translateY(50px);
   opacity: 0;
-  transition: opacity 1000ms, transform 500ms; 
+  transition: opacity 1000ms, transform 1000ms; 
 }
 
 .image-section.animated {
